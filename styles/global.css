@@ -1,0 +1,50 @@
+*{
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+:root{
+  --brand-light: #f67841;
+  --brand-mid: #f3541C;
+  --brand-dark: #E43A12;
+
+  --text-primary: #292524;
+  --text-secondary: #57534E;
+  --text-tertiary: #8F8881;
+  --text-highlight: #E43A12;
+
+  --surface-primary:#Ffffff;
+  --surface-secondary:#FEE7D6;
+  --surface-disabled:#E7E5E4;
+
+  --stroke-default: #D6D3D1;
+  --stroke-highlight: #F3541C;
+  --semantic-error: #dC2626;
+
+  --orange: #F9A474;
+  --yellow: #FEDF6F;
+  --green: #C7D78D;
+  --blue: #B8CEDC;
+  --violet: #C3B2E7;
+  --pink: #F682A5;
+  
+  --font-family: 'Poppins', sans-serif;
+}
+h1{
+  font: 600, 32px/120% var(--font-family);
+}
+h2{
+  font: 600, 24px/120% var(--font-family);
+}
+h3{
+  font: 600, 20px/120% var(--font-family);
+}
+h4{
+  font: 600, 16px/120% var(--font-family);
+}
+p{
+  font: 400, 16px/150% var(--font-family);
+}
+
+
+https://open.spotify.com/intl-pt/track/7AqeWMbBHytCqIiZDQISEb?si=9f5b1976bf034b21
