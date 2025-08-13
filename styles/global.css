@@ -29,22 +29,44 @@
   --pink: #F682A5;
   
   --font-family: 'Poppins', sans-serif;
+  --text-md: 400 16px/150% var(--font-family);
+  
+}
+.text-md{
+  font: var(--text-md);
+  color: var(--text-secondary);
 }
 h1{
-  font: 600, 32px/120% var(--font-family);
+  font-family: var(--font-family);
+  font-size: 32px;
+  line-height: 120%;
+  font-weight: 600;
 }
 h2{
-  font: 600, 24px/120% var(--font-family);
+  font-family: var(--font-family);
+  font-size: 24px;
+  line-height: 120%;
+  font-weight: 600;
 }
 h3{
-  font: 600, 20px/120% var(--font-family);
+  font-family: var(--font-family);
+  font-size: 20px;
+  line-height: 120%;
+  font-weight: 600;
 }
 h4{
-  font: 600, 16px/120% var(--font-family);
+  font-family: var(--font-family);
+  font-size: 16px;
+  line-height: 120%;
+  font-weight: 600;
 }
 p{
-  font: 400, 16px/150% var(--font-family);
+  color: var(--text-secondary);
+  font-family: var(--font-family);
+  font-size: 16px;
+  line-height: 150%;
+  font-weight: 400;
 }
-
-
-https://open.spotify.com/intl-pt/track/7AqeWMbBHytCqIiZDQISEb?si=9f5b1976bf034b21
+body{
+  overflow: hidden;
+}
