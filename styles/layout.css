@@ -11,14 +11,41 @@ main{
   & .main-container{
     max-width: 33rem;
     margin-left: auto;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 48px;
   }
 }
 aside{
   background-color: var(--surface-secondary);
   padding: 4rem;
 
-  & .main-container{
+  & .aside-container{
     max-width: 31rem;
     margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    align-self: stretch;
   }
+}
+.back{
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  span{
+    color: var(--text-tertiary);
+  }
+}
+.header{
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+#description{
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
 }
