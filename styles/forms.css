@@ -16,4 +16,6 @@ legend{
   line-height: 125%;
   margin-bottom: 1.5rem;
 }
-
+fieldset + fieldset{
+  margin-top: 48px;
+}
