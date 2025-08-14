@@ -19,3 +19,34 @@ legend{
 fieldset + fieldset{
   margin-top: 48px;
 }
+
+button{
+  display: inline-flex;
+  min-width: 120px;
+  padding: 12px 24px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  border-radius: 8px;
+  cursor: pointer;
+
+  &.btn-primary{
+    color: white;
+    border: 1px solid var(--brand-dark);
+    background: var(--brand-dark);
+  }
+  &.btn-secondary{
+    color: var(--brand-dark);
+    margin-left: auto;
+    border: 1px solid var(--text-highlight);
+    background: var(--surface-primary);
+  
+  &:hover, &:focus-within{
+    border: 1px solid var(--brand-dark);
+    outline: var(--surface-secondary);
+  }
+  
+  }
+}
+
+

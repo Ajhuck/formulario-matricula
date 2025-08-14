@@ -140,15 +140,21 @@ label + .radio-wrapper{
 }
 
 .radio-inner{
-  position: relative;
-  display: flex;
+  display: grid;
   padding: 32px 16px 16px 16px;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  justify-items: center;
+  gap: 8px;
   border-radius: 8px;
   border: 1px solid var(--stroke-default);
   background: var(--surface-primary);
+  
+  position: relative;
+
+  & input, & input:focus, & input:hover {
+    all: unset;
+    position: absolute;
+    inset: 0;    
+  }
 
   .radio-image {
     background-image: url(../../assets/icons/circle.svg);
@@ -160,12 +166,7 @@ label + .radio-wrapper{
     left: 8px;
   }
 
-  & input,
-  & input:focus,
-  & input:hover{
-    all:unset;
-  }
-  &:hover, &:focus, &:has(input:focus){
+  &:hover, &:focus-within{
       border-radius: 8px;
       border: 2px solid var(--stroke-highlight);
       background: var(--surface-primary);
@@ -178,6 +179,50 @@ label + .radio-wrapper{
       
     & .radio-image{
         background-image: url(../../assets/icons/checkmark-circle-01.svg);
+    }
+  }
+}
+.terms-wrapper{
+  margin-top:48px;
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  align-self: stretch;
+
+  & strong{
+    font-weight: 500;
+    color: var(--stroke-highlight);
+  }
+}
+.actions-wrapper{
+  margin-top: 48px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 16px;
+  align-self: stretch;
+}
+
+.checkbox-wrapper{
+  position: relative;
+  & [type="checkbox"]{
+    all: unset;
+    position: absolute;
+    inset: 0;
+  }
+  .checkbox-image{
+    flex: 0 0 24px;
+    height: 24px;
+    background-image: url(../../assets/icons/square.svg);
+  }
+  &:hover, &:focus-within{
+    & .checkbox-image{
+      background-image: url(../../assets/icons/square-hover.svg);
+    }
+  }
+  &:has(:checked){
+    & .checkbox-image{
+      background-image: url(../../assets/icons/checkmark-square-01.svg);
     }
   }
 }
