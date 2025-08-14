@@ -30,10 +30,15 @@
   
   --font-family: 'Poppins', sans-serif;
   --text-md: 400 16px/150% var(--font-family);
+  --text-sm: 400 14px/140% var(--font-family);
   
 }
 .text-md{
   font: var(--text-md);
+  color: var(--text-secondary);
+}
+.text-sm{
+  font: var(--text-sm);
   color: var(--text-secondary);
 }
 h1{
@@ -67,6 +72,13 @@ p{
   line-height: 150%;
   font-weight: 400;
 }
+small{
+  font-family: var(--font-family);
+  color: var(--text-secondary);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 140%;
+}
 body{
   overflow: hidden;
 }
@@ -76,10 +88,19 @@ img{
 }
 .flex{
   display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  align-self: stretch;
 }
 .flex-1{
-  flex: 1;
+  display: flex;
+  width: 332px;
+  flex-direction: column;
+  align-items: flex-start;
 }
 .flex-2{
-  flex: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex: 1 0 0;
 }
