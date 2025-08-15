@@ -34,18 +34,23 @@ button{
     color: white;
     border: 1px solid var(--brand-dark);
     background: var(--brand-dark);
+    &:hover, &:focus-within{
+      background-color: var(--brand-mid);
+      border: 1px solid var(--brand-dark);
+      outline: var(--surface-secondary);
+    }
   }
+
   &.btn-secondary{
     color: var(--brand-dark);
     margin-left: auto;
     border: 1px solid var(--text-highlight);
     background: var(--surface-primary);
-  
-  &:hover, &:focus-within{
-    border: 1px solid var(--brand-dark);
-    outline: var(--surface-secondary);
-  }
-  
+    
+    &:hover, &:focus-within{
+      border: 1px solid var(--brand-dark);
+      outline: 4px solid var(--surface-secondary);
+    }
   }
 }
 
